@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body{
@@ -9,33 +10,24 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background: rgb(248, 203, 248);
+    background-image: url(backg.jpg);
 }
 .container1{
-    border: 2px solid rgb(184, 50, 184);
-    background-color: #dba0db;
-    border-radius: 10px;
-    margin: 50px;
+    border: 1px solid lightblue;
+    border-radius: 7px;
+    margin: 40px;
+    color: white;
     padding: 20px;
-    width: 40%;
-    display: block;
     font-family: Arial, Helvetica, sans-serif;
-}
-.container1 p{
-    margin: 5px;
-}
-.box{
-    margin: 4px;
-    border: 2px solid red;
+    width: 70%;
 }
 .container1 p{
     font-size: 1.6rem;
-
 }
-
 .share-btn{
-    position: relative;
     border: none;
     background: #fff;
     color: #ff7d7d;
@@ -46,7 +38,6 @@ body{
     padding-top: 2.5px;
     padding-right: 3px;
     cursor: pointer;
-    z-index: 2;
 }
 
 .share-options{
@@ -75,9 +66,13 @@ body{
 #myText{
     color: black;
 }
-.btn{
+.CopyBtn{
     background-color: blue;
     color: white;
+    border-radius: 40px;
+    height: 50px;
+    width: 60px;
+    margin-right: -10px;
 
 }
 .btn:hover{
@@ -191,13 +186,16 @@ img{
     transition: .5s;
     transition-delay: .5s;
 }
-.btn2{
+input{
     width: 150px;
     color: white;
+    margin-top: 30px;
+    margin-left: -29px;
     font-size: 1.5rem;
     background-color: red;
     border: 2px solid red;
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    cursor: pointer;
 }
