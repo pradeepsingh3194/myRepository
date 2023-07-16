@@ -5,23 +5,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
+    <style>
+         @media only screen and(min-width:0px) {
+            .container1{
+                margin: auto;
+                width: 100px;
+                height: 70px;
+            }
+            
+        }
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            .container1{
+                margin: auto;
+                height: 400px;
+                width: 300px;
+                
+            }
+            .container{
+                margin-top: 20px;
+            }
+        }
+        @media (min-width: 500px) and (max-width:800px) {
+            .container1{
+                margin: auto;
+                height: 400px;
+                width: 300px;
+            
+            }
+            .container{
+                margin-top: 20px;
+            }
+        }
+       
+
+    </style>
 </head>
 
 <body>
 
     <div class="container1">
-
         <p>Subscribe the channel and share more than 5 contacts and view minimum 5 videos and get 399 recharge for free
         </p>
         <p>Subscribe and 5 से अधिक संपर्क साझा करें और न्यूनतम 5 वीडियो देखें और मुफ्त में 399 का रिचार्ज प्राप्त करें
         </p>
     </div>
-
     <div class="container">
         <button class="share-btn">
             <i class="fas fa-share-alt"></i>
@@ -33,19 +62,14 @@
                 <button class="social-media-btn"><a href="whatsapp://send?text=Check out this link: {https://www.youtube.com/@fun_Baba_morden}"
                         target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i></a></button>
-                <button class="social-media-btn"><a href="http://www.instagram.com"><i
+                <button class="social-media-btn"><a href="instagram://send?text=Check out this link: {https://www.youtube.com/@fun_Baba_morden}"><i
                             class="fab fa-instagram"></i></a></button>
-                <button class="social-media-btn"><a href="http://www.twitter.com"><i
-                            class="fab fa-twitter"></i></a></button>
-                <button class="social-media-btn"><a href="http://www.facebook.com"><i
+                <button class="social-media-btn"><a href="messenger://send?text=Check out this link: {https://www.youtube.com/@fun_Baba_morden}"><i
                             class="fab fa-facebook-f"></i></a></button>
-                <button class="social-media-btn"><a href="http://www.linkdin.com"><i
-                            class="fab fa-linkedin-in"></i></a></button>
-
             </div>
             <div class="link-container">
-                <p id="myText">https://www.youtube.com/@fun_Baba_morden</p>
-                <button class="btn" onclick="copyContent()">Copy!</button>
+                <p id="myText">https://pradeepsingh3194.github.io/myRepository/</p>
+                <button class="CopyBtn" onclick="copyContent()">Copy!</button>
 
                 <script>
                     let text = document.getElementById('myText').innerHTML;
@@ -60,13 +84,14 @@
                 </script>
             </div>
         </div>
-        <button class="btn2">Subscribe</button>
+        <input type="submit" name="Subscribe" onClick="myFunction()"/> 
 
+    <script>
+      function myFunction() {
+        window.location.href="https://www.youtube.com/@fun_Baba_morden";  
+      }
+    </script>
         <script src="app.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
 </body>
 
 </html>
