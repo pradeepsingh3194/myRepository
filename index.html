@@ -5,44 +5,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <style>
-         @media only screen and(max-width:300px) {
-            .container1{
+        @media only screen and(max-width:300px) {
+            .container1 {
                 margin: auto;
                 width: 100px;
                 height: 150px;
             }
-             .container{
-                 margin-bottom: 170px;
-             }
-            
+
+            .container {
+                margin-bottom: 170px;
+            }
+
         }
+
         @media only screen and (min-width: 300px) and (max-width:500px) {
-            .container1{
+            .container1 {
                 margin: auto;
                 height: 400px;
                 width: 300px;
-                
+
             }
-            .container{
+
+            .container {
                 margin-bottom: 174px;
             }
         }
+
         @media (min-width: 500px) and (max-width:800px) {
-            .container1{
+            .container1 {
                 margin: auto;
                 height: 400px;
                 width: 300px;
-            
+
             }
-            .container{
+
+            .container {
                 margin-bottom: 40px;
             }
         }
-       
-
     </style>
 </head>
 
@@ -53,48 +56,49 @@
         </p>
         <p>Subscribe and 5 से अधिक संपर्क साझा करें और न्यूनतम 5 वीडियो देखें और मुफ्त में 399 का रिचार्ज प्राप्त करें
         </p>
-    </div>
-    <div class="container">
-        <button class="share-btn">
-            <i class="fas fa-share-alt"></i>
-        </button>
-        <div class="share-options">
-            <p class="title">share</p>
-            <div class="social-media">
-                <button class="social-media-btn"><a href="#"><i class="far fa-folder-open"></i></a></button>
-                <button class="social-media-btn"><a href="whatsapp://send?text=Check out this link: {https://pradeepsingh3194.github.io/myRepository/}"
-                        target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-whatsapp"></i></a></button>
-                <button class="social-media-btn"><a href="instagram://send?text=Check out this link: {https://pradeepsingh3194.github.io/myRepository/}"><i
-                            class="fab fa-instagram"></i></a></button>
-                <button class="social-media-btn"><a href="messenger://send?text=Check out this link: {https://pradeepsingh3194.github.io/myRepository/}"><i
-                            class="fab fa-facebook-f"></i></a></button>
-            </div>
-            <div class="link-container">
-                <p id="myText">https://pradeepsingh3194.github.io/myRepository/</p>
-                <button class="CopyBtn" onclick="copyContent()">Copy!</button>
 
-                <script>
-                    let text = document.getElementById('myText').innerHTML;
-                    const copyContent = async () => {
-                        try {
-                            await navigator.clipboard.writeText(text);
-                            alert('Content copied to clipboard');
-                        } catch (err) {
-                            console.error('Failed to copy: ', err);
+        <div class="container">
+            <button class="share-btn">
+                <i class="fas fa-share-alt"></i>
+            </button>
+            <div class="share-options">
+                <p class="title">share</p>
+                <div class="social-media">
+                    <button class="social-media-btn"><a href="#"><i class="far fa-folder-open"></i></a></button>
+                    <button class="social-media-btn"><a
+                            href="whatsapp://send?text=Check out this link: {https://pradeepsingh3194.github.io/myRepository/}"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i></a></button>
+                    <button class="social-media-btn"><a
+                            href="instagram://send?text=Check out this link: {https://pradeepsingh3194.github.io/myRepository/}"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i></a></button>
+                </div>
+                <div class="link-container">
+                    <p id="myText">https://pradeepsingh3194.github.io/myRepository/</p>
+                    <button class="CopyBtn" onclick="copyContent()">Copy!</button>
+
+                    <script>
+                        let text = document.getElementById('myText').innerHTML;
+                        const copyContent = async () => {
+                            try {
+                                await navigator.clipboard.writeText(text);
+                                alert('Content copied to clipboard');
+                            } catch (err) {
+                                console.error('Failed to copy: ', err);
+                            }
                         }
-                    }
-                </script>
+                    </script>
+                </div>
             </div>
-        </div>
-        <input type="submit" name="Subscribe" onClick="myFunction()"/> 
+            <input type="submit" name="Subscribe" onClick="myFunction()" />
 
-    <script>
-      function myFunction() {
-        window.location.href="https://www.youtube.com/@fun_Baba_morden";  
-      }
-    </script>
-        <script src="app.js"></script>
+            <script>
+                function myFunction() {
+                    window.location.href = "https://www.youtube.com/@fun_Baba_morden";
+                }
+            </script>
+            <script src="app.js"></script>
 </body>
 
 </html>
